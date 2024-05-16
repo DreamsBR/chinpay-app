@@ -1,0 +1,7 @@
+{
+  "name": "chinpay",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
