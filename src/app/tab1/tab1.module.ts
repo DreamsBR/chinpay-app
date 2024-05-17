@@ -6,6 +6,8 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { StartPageComponent } from '../start/start-page/start-page.component';
+import { StartPageModule } from '../start/start-page.module';
 
 @NgModule({
   imports: [
@@ -13,7 +15,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    StartPageModule
   ],
   declarations: [Tab1Page]
 })
