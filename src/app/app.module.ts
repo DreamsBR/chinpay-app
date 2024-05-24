@@ -8,10 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartPageModule } from './start/start-page.module';
 import { PrincipalModule } from './principal/principal.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, StartPageModule, PrincipalModule],
+  imports: [HttpClientModule, FormsModule ,BrowserModule, IonicModule.forRoot(), AppRoutingModule, StartPageModule, PrincipalModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

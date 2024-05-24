@@ -5,11 +5,11 @@
     <div class="header">¡Chinpea en 4 simples pasos!</div>
     <div class="subheader">Indícanos tu número de celular y correo electrónico.</div>
     <div class="input-field">
-      <input type="text" placeholder="Numero de celular">
+      <input [(ngModel)]="numeroCelular" type="text" placeholder="Nombre Usuario">
     </div>
     <div class="input-field">
-      <input type="text" placeholder="Correo electrónico">
+      <input [(ngModel)]="correoElectronico" type="text" placeholder="Codigo de Usuario">
     </div>
-    <button class="button" (click)="onClicNext()">SIGUIENTE</button>
+    <button class="button" (click)="onClicNext(numeroCelular, correoElectronico)">SIGUIENTE</button>
   </div>
 </div>
